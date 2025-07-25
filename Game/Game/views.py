@@ -1,8 +1,7 @@
-#I have created it
-from django.http import HttpResponse
 from django.shortcuts import render
-def index(request):
-    return render(request, 'Ev bikes.html')
 
-def About(request):
-   return HttpResponse (" What about you")
+def home_view(request):
+    return render(request, 'index.html')
+
+def ev_bikes_view(request):
+    return render(request, 'ev_bikes.html')  # use underscore
